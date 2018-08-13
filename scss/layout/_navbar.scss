@@ -1,0 +1,32 @@
+.navbar {
+    font-size: $default-font-size;
+
+    a {
+        color: #ffffff;
+    }
+
+
+    // ul {
+    //     list-style-type: none;
+    //     margin: 0;
+    //     padding: 0;
+    //     overflow: hidden;
+    // }
+
+    li {
+         margin-right: 40px;
+
+        a {
+            font-size: 18px;
+            color: #666D78;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        &.active a {
+            color: #ffffff;
+        }
+     }
+}
