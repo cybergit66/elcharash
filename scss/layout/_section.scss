@@ -1,13 +1,278 @@
 section {
 
-    &#Main, &#Music {
-        margin: 10rem 0;
-    }
 
     &#Main {
         .img-collage {
+            width:100%;
+            
+        }
+
+        .img-giza {
             width: 100%;
         }
     }
+
+    &#Videos {
+        margin-bottom: 100px;
+    }
+
+    &#About {
+
+        .about-info {
+            h2 {
+                margin-bottom: 50px;
+                font-weight: 700;
+            }
+
+            .about-subtitle {
+                font-size: 32px;
+                line-height: 38px;
+                font-weight: 400;
+
+                a {
+                    padding: 10px 25px;
+                    font-size: 18px;
+                }
+            }
+
+            .about-text {
+                font-size: 19px;
+            }
+        }
+    }
     
+    &#Blog {
+        margin: 50px 0;
+        text-align: center;
+
+        .title-container {
+            padding: 55px 40px;
+            min-height: 100px;
+
+            .blog-header {
+                font-size: 35px;
+            }
+        }
+
+        .blog-container {
+
+            .minimal-post {
+                padding-top: 20px;
+                padding-bottom: 50px;
+                position: relative;
+
+                &::after {
+                    left: 50.9%;
+                    content: '';
+                    position: absolute;
+                    height: 100%;
+                    width: 1px;
+                    top: 0;
+                    background: rgb(94, 92, 92);
+                    right: -10px;
+                }
+            }
+            .minimal-date--left {
+                text-align: right;
+
+                span.middle-line::after {
+                    content: '';
+                    position: absolute;
+                    height: 100%;
+                    width: 1px;
+                    top: 0;
+                    background: rgb(94, 92, 92);
+                    right: -10px;
+                }
+            }
+
+            .minimal-date--right {
+                text-align: left;
+                 
+                .simple-date {
+                    margin-left: 20px;
+                }
+            }
+
+            .simple-date::before {
+                content: '';
+                position: absolute;
+                height: 5px;
+                width: 5px;
+                right: -12px;
+                background: rgb(94, 92, 92);
+                top: calc(50% - 3px);
+            }
+
+            .minimal-content {
+
+                &__text--right {
+                    text-align: left;
+                    margin-left: 20px;
+                }
+                
+                &__text--left {
+                    text-align: right;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        height: 5px;
+                        width: 5px;
+                        right: -12px;
+                        background: rgb(94, 92, 92);
+                        top: calc(50% - 3px);
+                    }
+                }
+
+                h2 {
+
+                    &:hover {
+                        color: #00B98A;
+                        cursor: pointer;
+                    }
+
+                    &.middle-line::after {
+                        content: '';
+                        position: absolute;
+                        height: 100%;
+                        width: 1px;
+                        top: 0;
+                        background: rgb(94, 92, 92);
+                        right: -10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    section#Blog .blog-container .simple-date::before {
+        right: -10px;
+    }
+
+    section#Blog .blog-container .minimal-date--left span.middle-line::after {
+        right: -7px;
+    }
+
+    section#Blog .blog-container .minimal-content__text--left::before {
+        right: -10px;
+    }
+
+    section#Blog .blog-container .minimal-content h2.middle-line::after {
+        right: -7px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-text p {
+        display: none;
+    }
+
+    section#Blog .blog-container .minimal-post::after,
+    section#Blog .blog-container .minimal-post::after,
+    section#Blog .blog-container .simple-date::before,
+    section#Blog .blog-container .minimal-date--left span.middle-line::after,
+    section#Blog .blog-container .minimal-content__text--left::before,
+    section#Blog .blog-container .minimal-content h2.middle-line::after
+     {
+        background: transparent;
+    }
+
+    .blog-snippet--right {
+        text-align: left !important;
+    }
+
+    .blog-snippet--left,
+    .blog-snippet--left .blog-snippet__text {
+        text-align: right !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        padding-top: 2px;
+    }
+
+    #page-header {
+        margin-top: 1rem !important;
+    }
+
+    #Main {
+        padding: 10px;
+    }
+
+    .jumbotron {
+        height: 400px !important;
+    }
+
+    section#Videos {
+        padding: 10px;
+        margin-bottom: 70px;
+    }
+
+    section#About .about-info .about-subtitle {
+        font-size: 20px;
+    }
+
+    div.col-md-5.about-subtitle.mr-5 {
+        margin-right: 0 !important;
+    }
+
+    .about-info {
+        text-align: center !important;
+    }
+
+    section#Blog {
+        margin-top: 30px;
+    }
+
+    section#Blog .title-container {
+        padding-bottom: 20px;
+    }
+
+    section#Blog .blog-container .minimal-post {
+        padding-bottom: 25px;
+    }
+
+    .minimal-content h2 {
+        font-size: 16px !important;
+    }
+
+    section#Blog .blog-container .minimal-date--left {
+        display: none;
+    }
+
+    section#Blog .blog-container .minimal-date--right .simple-date {
+        display: none;
+    }
+
+    section#Blog .blog-container .minimal-content__text--right {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    section#Blog .blog-container .minimal-content__text--left {
+        text-align: center;
+    }
+
+    .blog-snippet--right {
+       // text-align: center !important;
+    }
+
+    .blog-snippet--left, .blog-snippet--left .blog-snippet__text {
+        text-align: left !important;
+    }
+
+    .blog-snippet__text {
+        font-size: 12px !important;
+        padding: 10px;
+        margin-bottom: 0;
+    }
+
+    .blog-snippet .btn-lg {
+        font-size: 12px !important;
+        margin-left: 13px;
+    }
 }

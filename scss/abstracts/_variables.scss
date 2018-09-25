@@ -1,4 +1,6 @@
 // Fonts
+$fa-font-path: "../../webfonts/";
+$default-font: 'Rubik', sans-serif;
 $default-font-size: 1.6rem;
 
 // Grid
@@ -8,3 +10,8 @@ $gutter-horizontal: 6rem;
 
 // Margins
 $margin-md: 4rem;
+
+// Colors
+$primary-color: #375A7F;
+$secondary-color: #303030;
+$success-color: #00BC8C

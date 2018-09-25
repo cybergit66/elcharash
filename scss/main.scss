@@ -1,5 +1,9 @@
-// Bootstrap
+// Vendors
 @import "vendors/bootswatch/darkly.scss";
+@import "vendors/fontawesome/scss/fontawesome";
+@import "vendors/fontawesome/scss/regular";
+@import "vendors/fontawesome/scss/solid";
+@import "vendors/fontawesome/scss/brands";
 
 // variables
 @import "abstracts/variables.scss";
@@ -12,6 +16,15 @@
 @import "layout/header.scss";
 @import "layout/navbar.scss";
 @import "layout/section.scss";
+@import "layout/footer.scss";
 
 //components
 @import "components/buttons.scss";
+@import "components/jumbotron.scss";
+@import "components/youtube.scss";
+@import "components/modal.scss";
+@import "components/blog-snippet.scss";
+
+//pages
+@import "pages/journal.scss";
+@import "pages/gallery.scss";

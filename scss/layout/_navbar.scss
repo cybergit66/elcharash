@@ -1,11 +1,6 @@
 .navbar {
     font-size: $default-font-size;
 
-    a {
-        color: #ffffff;
-    }
-
-
     // ul {
     //     list-style-type: none;
     //     margin: 0;
@@ -18,15 +13,18 @@
 
         a {
             font-size: 18px;
-            color: #666D78;
         }
-
-        a:hover {
-            color: #ffffff;
-        }
+    }
 
         &.active a {
             color: #ffffff;
         }
-     }
+    }
+
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.507)
 }
+
+// .navbar-dark .navbar-nav .nav-item a {
+//     color: #949494 !important;
+// }

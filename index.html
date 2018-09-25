@@ -9,6 +9,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Rubik:400,700" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -21,23 +22,27 @@
 
         <!-- navbar section -->
             
-    <nav class="navbar navbar-expand-lg navbar-inverse">
-            <div class="container">
-        <a class="navbar-brand" href="#"><h1>El Charash</h1></a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><h1>El Charash</h1></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
             <div class="collapse navbar-collapse" id="navbarColor03">
                 <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="./journal.html">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="gallery.html">Gallery</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
@@ -52,7 +57,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 pt-5">
-                    <h1>Welcome to the Mystic Messenger</h1>
+                    <h1>The Mystic Messenger</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
                 </div>
             </div>
@@ -61,51 +66,11 @@
             
         
         <!-- main section -->
-        <section id="Main">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2 d-flex flex-column">
-                        
-                            <div>
-                                <img src="img/Picture 001.jpg" alt="picture1" class="img-collage">
-                            </div>
-                            <div>
-                                    <img src="img/Picture 001.jpg" alt="picture1" class="img-collage">
-                            </div>
-                        
-                    </div>
-                    <div class="col-md-6">
-                        <img src="img/giza5.jpg" alt="giza" class="img-thumbnail">   
-                    </div>
-
-                    <!-- gallery carousel -->
-                    <!-- <div class="col-md-6 elcharash-slide">
-                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                  <div class="carousel-item active">
-                                    <img class="d-block w-100 img-thumbnail border-primary" src="img/Picture 001.jpg" alt="First slide">
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img class="d-block w-100 img-thumbnail border-primary" src="img/Picture 003.jpg" alt="Second slide">
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img class="d-block w-100 img-thumbnail border-primary" src="img/Picture 004.jpg" alt="Third slide">
-                                  </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                  <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                  <span class="sr-only">Next</span>
-                                </a>
-                              </div>
-                              <!-- end carousel -->
-                            <!-- <p>Sapiente sed laborum ab repellat voluptas unde labore delectus consequatur pariatur amet?</p>
-                            <a class="btn btn-danger btn-lg btn-block">View Entire Gallery</a> -->
-                    <!-- </div> -->
+        <section id="Main" class="mt-0">
+            <div class="container main">
+                <div class="jumbotron jumbotron-fluid">
                 </div>
+                <!-- <div class="obfuscation-1"></div> -->
             </div>
         </section>
         <!-- end main section -->
@@ -113,69 +78,215 @@
         <!-- video section -->
         <section id="Videos" class="video-section text-center">
             <div class="container">
-                <h2>Videos</h2>
-                <div class="row">
-                    <div class="col-md-4 text-center">
-                            <div class="card border-primary mb-3" style="width: 100%">
-                                    <div class="card-header bg-light">Jump Started Our Romance</div>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/2vKs00Pl00Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            </div>
-                    </div>
-                    
-                    <div class="col-md-4 text-center">
-                        <div class="card border-primary mb-3" style="width: 100%">
-                            <div class="card-header bg-light">Somerset Theme</div>
-                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/6d4LVrgsd1Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 text-center">
-                                <div class="card border-primary mb-3" style="width: 100%">
-                                <div class="card-header bg-light">Forbidden Love</div>
-                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/46FLz83H1xo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-                                </iframe>
+                <!-- <h2>Videos</h2> -->
+                <!-- first row -->
+                <div class="row mb-5">
+                    <div class="col-md col-sm text-center video-container">
+                        <div class="video-wrap">
+                            <div class="video-item" video-name="Jump Started Our Romance">
+                                <img src="img/Picture 024.jpg" alt="image-video">
+                                <i class="fab fa-youtube fa-3x"></i>
+                                <div class="video-description">
+                                    <h2 class="video-title">JUMPED STARTED OUR ROMANCE</h2>
+                                    <div class="video-filter">
+                                        Video
+                                    </div>
                                 </div>
+                            </div>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/2vKs00Pl00Q?showinfo=0" allow="encrypted-media" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
-                    
-                    
-                    <div class="row">
-                            
-                            <div class="col-md-4 text-center">
-                                    <div class="card border-primary mb-3" style="width: 100%">
-                                            <div class="card-header bg-light">Blue Star Rising</div>
-                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/zNSIGraWgGI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 text-center">
-                                    <div class="card border-primary mb-3" style="width: 100%">
-                                    <div class="card-header bg-light">Lost In A Dream (in Babylon)</div>
-                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/ALXc2UjpxLQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 text-center">
-                                <div class="card border-primary mb-3" style="width: 100%">
-                                        <div class="card-header bg-light">Color Her Mystery</div>
-                                        
-                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/XUvrxcxoY3Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                                        
+                    <div class="col-md text-center video-container">
+                            <div class="video-wrap">
+                                <div class="video-item" video-name="Somerset Theme">
+                                    <img src="img/Picture 034.jpg" alt="image-video">
+                                    <i class="fab fa-youtube fa-3x"></i>
+                                    <div class="video-description">
+                                        <h2 class="video-title">Somerset Theme</h2>
+                                        <div class="video-filter">
+                                            Video
                                         </div>
+                                    </div>
+                                </div>
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/6d4LVrgsd1Y?showinfo=0" allow="encrypted-media" frameborder="0" allowfullscreen></iframe>
                             </div>
                     </div>
-                    <div class="row">
-                            
+                    <div class="col-md text-center video-container">
+                            <div class="video-wrap">
+                                <div class="video-item" video-name="Forbidden Love">
+                                    <img src="img/Picture 025.jpg" alt="image-video">
+                                    <i class="fab fa-youtube fa-3x"></i>
+                                    <div class="video-description">
+                                        <h2 class="video-title">Forbidden Love</h2>
+                                        <div class="video-filter">
+                                            Video
+                                        </div>
+                                    </div>
+                                </div>
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/46FLz83H1xo?showinfo=0" allow="encrypted-media" frameborder="0" allowfullscreen></iframe>
+                            </div>
                     </div>
                 </div>
+                <!-- end first row -->
+                <!-- second row -->
+                <div class="row">
+                        <div class="col-md text-center video-container">
+                                <div class="video-wrap">
+                                    <div class="video-item" video-name="Blue Star Rising">
+                                        <img src="img/Picture 136.jpg" alt="image-video">
+                                        <i class="fab fa-youtube fa-3x"></i>
+                                        <div class="video-description">
+                                            <h2 class="video-title">Blue Star Rising</h2>
+                                            <div class="video-filter">
+                                                Video
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/zNSIGraWgGI?showinfo=0" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                        </div>
+                        <div class="col-md text-center video-container">
+                                <div class="video-wrap">
+                                    <div class="video-item" video-name="Lost In a Dream">
+                                        <img src="img/Picture 038.jpg" alt="image-video">
+                                        <i class="fab fa-youtube fa-3x"></i>
+                                        <div class="video-description">
+                                            <h2 class="video-title">Lost In a Dream in Babylon</h2>
+                                            <div class="video-filter">
+                                                Video
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/ALXc2UjpxLQ?showinfo=0" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                        </div>
+                        <div class="col-md text-center video-container">
+                                <div class="video-wrap">
+                                    <div class="video-item" video-name="Color Her Mystery">
+                                        <img src="img/Picture 025_0.jpg" alt="image-video">
+                                        <i class="fab fa-youtube fa-3x"></i>
+                                        <div class="video-description">
+                                            <h2 class="video-title">Color Her Mystery</h2>
+                                            <div class="video-filter">
+                                                Video
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/XUvrxcxoY3Y?showinfo=0" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                        </div>
                 </div>
+                    <!-- end second row -->
+                    
+            </div>
+            <!-- end container -->
         </section>
         <!-- end music section -->
+        <!-- video modal section -->
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- The Close Button -->
+            <span class="modal-close">&times;</span>
+      
+            <!-- Modal Content (The Image) -->
+            <div class="modal-content" id="ModalContent"></div>
+      
+            <!-- Modal Caption (Image Text) -->
+            <div id="ModalCaption" class="modal-caption"></div>
+        </div>
+
+        <!-- begin about section -->
+        <section id="About" class="mt-5">
+            <div class="about-info container">
+                <h2 class="text-success">About El Charash</h2>
+                <div class="row">
+                    <div class="col-md-5 about-subtitle mr-5">
+                        <p>Mystic, artist, writer extraordinaire, musician and Composer are a few words that describes this gifted soul
+                        </p>
+                        <a href="#" class="btn btn-outline-success btn-lg mt-5">View Portfolio </a>
+                    </div>
+                    <div class="col-md-6 about-text">
+                        <p class="text-muted">
+                                El Charash’s paintings and artworks are spiritual revelations and interpretations of his Meditative experiences and theological research. El Charash’s art depicts ancient Egyptian history, Hebrew mysticism, Hermetic alchemy & astronomy and mythological land & seascapes.
+                        </p>
+                </div>
+            </div>
+        </section>
+        <!-- End about section -->
+
+        <!-- Begin blog section -->
+        <section id="Blog">
+            <div class="container title-container">
+                <h1 class="blog-header">Mystic Messages</h1>
+            </div>
+            <div class="container blog-container">
+                <article class="row minimal-post">
+                    <div class="col-md-6 col-sm-6 col-xs-6 minimal-date--left">
+                        <span class="simple-date middle-line text-muted">September 9, 2018</span>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 minimal-content">
+                        <h2 class="minimal-content__text--right">Dawn Upon the Kosmos</h2>
+                        <div class="blog-snippet blog-snippet--right">
+                                <p class="blog-snippet__text text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt esse blanditiis officia saepe voluptas nulla.</p>
+                                <a href="#" class="btn btn-outline-success btn-lg mt-2">Read More</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="row minimal-post">
+                    <div class="col-md-6 col-sm-6 minimal-content">
+                        <h2 class="minimal-content__text--left middle-line">Dawn Upon the Kosmos</h2>
+                        <div class="blog-snippet blog-snippet--left">
+                            <p class="blog-snippet__text text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt esse blanditiis officia saepe voluptas nulla.</p>
+                            <a href="#" class="btn btn-outline-success btn-lg mt-2">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 minimal-date--right">
+                        <span class="simple-date text-muted">September 9, 2018</span>
+                    </div>
+                </article>
+                <article class="row minimal-post">
+                        <div class="col-md-6 col-sm-6 minimal-date--left">
+                            <span class="simple-date middle-line text-muted">September 9, 2018</span>
+                        </div>
+                        <div class="col-md-6 col-sm-6 minimal-content">
+                            <h2 class="minimal-content__text--right">Dawn Upon the Kosmos</h2>
+                            <div class="blog-snippet blog-snippet--right">
+                                    <p class="blog-snippet__text text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt esse blanditiis officia saepe voluptas nulla.</p>
+                                    <a href="#" class="btn btn-outline-success btn-lg mt-2">Read More</a>
+                            </div>
+                        </div>
+                </article>
+                <article class="row minimal-post">
+                        <div class="col-md-6 col-sm-6 minimal-content">
+                            <h2 class="minimal-content__text--left middle-line">Dawn Upon the Kosmos</h2>
+                            <div class="blog-snippet blog-snippet--left">
+                                    <p class="blog-snippet__text text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt esse blanditiis officia saepe voluptas nulla.</p>
+                                    <a href="#" class="btn btn-outline-success btn-lg mt-2">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 minimal-date--right">
+                            <span class="simple-date text-muted">September 9, 2018</span>
+                        </div>
+                </article>
+                <article class="row minimal-post">
+                        <div class="col-md-6 col-sm-6 minimal-date--left">
+                            <span class="simple-date middle-line text-muted">September 9, 2018</span>
+                        </div>
+                        <div class="col-md-6 col-sm-6 minimal-content">
+                            <h2 class="minimal-content__text--right">Dawn Upon the Kosmos</h2>
+                            <div class="blog-snippet blog-snippet--right">
+                                <p class="blog-snippet__text text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt esse blanditiis officia saepe voluptas nulla.</p>
+                                <a href="#" class="btn btn-outline-success btn-lg mt-2">Read More</a>
+                            </div>
+                        </div>
+                </article>
+            </div>
+        </section>
 
         <!-- footer -->
         <footer>
             <div class="container text-center">
-                <p>ElCharash Copyright 2018 &nbsp; All Rights Reserved</p>
+                <p>&copy; 2018 by El Charash. All Rights Reserved</p>
             </div>
         </footer>
 
@@ -224,5 +335,6 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
         <script src="js/bootstrap.js"></script>
+        <script src="js/elcharash.js"></script>
     </body>
 </html>

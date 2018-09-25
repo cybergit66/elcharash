@@ -1,0 +1,129 @@
+.video-container {
+    //border: 1px solid #303030;
+    
+}
+
+.video-wrap {
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 0 5px 3px rgba(0, 188, 140, 0.5);
+    //width: 100%;
+
+    .video-item {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+
+        img {
+            width: 290px;
+            height: 100%;
+            
+        }
+
+        .fab.fa-youtube {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            // width: 64px;
+            // height: 64px;
+            /* change image icon here */
+            //background: url('../../img/play-control1.png') center center no-repeat;
+            vertical-align: center;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            opacity: .1;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background:transparent;
+            z-index: 10;
+            -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+        }
+
+        &:hover::after {
+            content: "";
+            position: absolute;
+            opacity: 1;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: $primary-color;
+        }
+
+        .video-description {
+            position: absolute;
+            top: 50%;
+            bottom: 0;
+            width: 100%;
+            padding: 25px 20px;
+            background-color:transparent;
+            font-size: 17px;
+            color: #ffffff;
+            text-align: right;
+            z-index: 11;
+            visibility: visible;
+            opacity: 0;
+            transition: opacity .6s ease;
+
+            h2 {
+                padding: 0 15px;
+                margin: 0;
+                font-size: 26px;
+                line-height: 24px;
+                font-weight: 700;
+            }
+
+            .video-filter {
+                position: relative;
+                text-align: right;
+                font-weight: 400;
+                padding: 8px 15px 2px 15px;
+                transform: translateY(-20%);
+                color: $success-color;
+            }
+
+        }
+
+        &:hover .video-description {
+           opacity: 1;
+        }
+    }    
+}
+
+@media screen and (min-width: 1200px) {
+    .video-wrap {
+        .video-item {
+            img {
+                width: 350px !important;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 991px){
+    .video-wrap {
+        .video-item {
+            img {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .video-container:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
